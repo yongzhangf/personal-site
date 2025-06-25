@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "title": "Yong`s Site",
+        "description": "个人网站"
+    },
+    "home": {
+        "main_header": "欢迎来到我的个人站点！",
+        "sub_header": "目前内容还在建设中，敬请谅解",
+        "get_started": "开始",
+        "read_blog": "阅读博客"
+    },
+    "footer": {
+        "base_on": "基于",
+        "template_on": "模板",
+        "deploy": "Déployer",
+        "sponsor": "Sponsor"
+    },
+    "navbar": {
+        "links": {
+            "documentation": "文档",
+            "blog": "博客",
+            "application": "应用",
+            "community": "交流"
+        },
+        "search": {
+            "search_documentation": "查询文档...",
+            "no_results_found": "没有找到您要找到文档",
+            "type_something": "输入关键字去查询..."
+        },
+        "theme": {
+            "light": "浅色",
+            "dark": "深色",
+            "system": "系统"
+        }
+    },
+    "docs": {
+        "on_this_page": "Sur cette page",
+        "next": "Suivant",
+        "previous": "Précédent"
+    },
+    "not_found": {
+        "404": "404",
+        "page_not_found": "Page non trouvée",
+        "sub_text": "Oups ! La page que vous recherchez n'existe pas.",
+        "back_to_homepage": "Retour à la page d'accueil"
+    },
+    "leftbar": {
+        "getting_started": "Commencer",
+        "introduction": "Introduction",
+        "installation": "Installation"
+    },
+    "blog": {
+        "title": "Les derniers blogs de ce produit",
+        "sub_title": "Tous les derniers blogs et actualités, directement de l'équipe.",
+        "published_on": "Publié le",
+        "back_to_blog": "Retour au blog",
+        "posted_by": "Publié par"
+    },
+    "openlink": {
+        "email_verification": {
+            "title": "邮箱验证",
+            "success_main": "您的邮箱验证成功！",
+            "success_sub": "您的邮箱地址已通过验证，现在可以安全登录并享受我们的服务了。",
+            "has_question": "遇到问题？",
+            "contact": "联系我们"
+        }
+    },
+    "error": {
+        "oops": "Oups !",
+        "something_went_wrong": "Quelque chose s'est mal passé.",
+        "sub_text": "Nous sommes désolés, une erreur s'est produite lors du traitement de votre demande.",
+        "reload_page": "Recharger la page",
+        "back_to_homepage": "Retour à la page d'accueil"
+    }
+}

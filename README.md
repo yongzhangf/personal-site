@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Site
 
-## Getting Started
+这是我的个人网站，主要用于记录各种日常文档、博客信息，并包含一些辅助页面。
 
-First, run the development server:
+## 技术栈
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+本项目基于以下技术实现：
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js](https://nextjs.org/) 15
+- [React](https://react.dev/) 19
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [Radix UI](https://www.radix-ui.com/) 组件库
+- [MDX](https://mdxjs.com/) 支持文档与博客内容
+- 其他依赖详见 [package.json](./package.json)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 构建与运行
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 安装依赖：
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. 本地开发启动：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. 构建生产环境：
 
-## Deploy on Vercel
+   ```bash
+   npm run build
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. 启动生产环境：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm start
+   ```
+
+## Release 信息
+
+- 当前版本：0.1.0
+
+## 感谢
+
+本项目基于 [AriaDocs](https://github.com/nisabmohd/Aria-Docs) 模板开发，感谢其优秀的开源贡献。
