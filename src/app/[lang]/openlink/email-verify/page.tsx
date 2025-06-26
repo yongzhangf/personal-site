@@ -1,6 +1,5 @@
 import { getDictionary, LangProps, LangPropsSimple } from "@/lib/dictionaries";
 import { CheckCircle } from "lucide-react";
-import Link from "next/link";
 
 // title: "Email Verification",
 
