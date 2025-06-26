@@ -1,4 +1,4 @@
-import { getDictionary, LangProps, LangPropsSimple } from "@/lib/dictionaries";
+import { getDictionary, LangProps } from "@/lib/dictionaries";
 import { CheckCircle } from "lucide-react";
 
 // title: "Email Verification",
@@ -11,16 +11,17 @@ export async function generateMetadata({ params }: LangProps) {
   };
 }
 
-export default async function EmailVerificationSuccess({
-  params,
-  searchParams,
-}: {
-  params: LangPropsSimple;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
+// export default async function EmailVerificationSuccess({
+//   params,
+//   searchParams,
+// }: {
+//   params: LangPropsSimple;
+//   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+// }) {
+export default async function EmailVerificationSuccess({ params }: LangProps) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-  const { userid } = await searchParams;
+  // const { userid } = await searchParams;
 
   return (
     <div className="flex sm:min-h-[80vh] min-h-[85vh] w-full flex-col items-center justify-center text-center bg-transparent">
@@ -29,7 +30,7 @@ export default async function EmailVerificationSuccess({
           <CheckCircle className="h-10 w-10 text-blue-500" />
         </div>
         <h1 className="text-2xl font-bold text-gray-800 mb-3">
-          {userid} {dict.openlink.email_verification.success_main}
+          {dict.openlink.email_verification.success_main}
         </h1>
         <p className="text-gray-600 mb-6">
           {dict.openlink.email_verification.success_sub}
