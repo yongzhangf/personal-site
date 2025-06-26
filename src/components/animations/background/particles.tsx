@@ -113,7 +113,7 @@ const Particles: React.FC<ParticlesProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const container = containerRef.current;
@@ -151,10 +151,15 @@ const Particles: React.FC<ParticlesProps> = ({
     const positions = new Float32Array(count * 3);
     const randoms = new Float32Array(count * 4);
     const colors = new Float32Array(count * 3);
-    let currentTheme = 'light'
-    if (theme) currentTheme = theme
-    const particleColorsWithTheme = particleColors ? particleColors.get(currentTheme) : defaultColors.get(currentTheme)
-    const palette = particleColorsWithTheme && particleColorsWithTheme.length > 0 ? particleColorsWithTheme : defaultColors.get(currentTheme)!;
+    const currentTheme = resolvedTheme === "dark" ? "dark" : "light";
+    const particleColorsWithTheme = particleColors
+      ? particleColors.get(currentTheme)
+      : defaultColors.get(currentTheme);
+    const palette =
+      Array.isArray(particleColorsWithTheme) &&
+      particleColorsWithTheme.length > 0
+        ? particleColorsWithTheme
+        : defaultColors.get("light")!;
 
     for (let i = 0; i < count; i++) {
       let x: number, y: number, z: number, len: number;
@@ -166,7 +171,10 @@ const Particles: React.FC<ParticlesProps> = ({
       } while (len > 1 || len === 0);
       const r = Math.cbrt(Math.random());
       positions.set([x * r, y * r, z * r], i * 3);
-      randoms.set([Math.random(), Math.random(), Math.random(), Math.random()], i * 4);
+      randoms.set(
+        [Math.random(), Math.random(), Math.random(), Math.random()],
+        i * 4
+      );
       const col = hexToRgb(palette[Math.floor(Math.random() * palette.length)]);
       colors.set(col, i * 3);
     }
@@ -234,7 +242,20 @@ const Particles: React.FC<ParticlesProps> = ({
         container.removeChild(gl.canvas);
       }
     };
-  }, [particleCount, particleSpread, speed, moveParticlesOnHover, particleHoverFactor, alphaParticles, particleBaseSize, sizeRandomness, cameraDistance, disableRotation, particleColors, theme]);
+  }, [
+    particleCount,
+    particleSpread,
+    speed,
+    moveParticlesOnHover,
+    particleHoverFactor,
+    alphaParticles,
+    particleBaseSize,
+    sizeRandomness,
+    cameraDistance,
+    disableRotation,
+    particleColors,
+    resolvedTheme,
+  ]);
 
   return (
     <div

@@ -12,8 +12,8 @@
     "footer": {
         "base_on": "基于",
         "template_on": "模板",
-        "deploy": "Déployer",
-        "sponsor": "Sponsor"
+        "deploy": "部署",
+        "sponsor": "赞助"
     },
     "navbar": {
         "links": {
@@ -34,27 +34,27 @@
         }
     },
     "docs": {
-        "on_this_page": "Sur cette page",
-        "next": "Suivant",
-        "previous": "Précédent"
+        "on_this_page": "在本页",
+        "next": "下一页",
+        "previous": "上一页"
     },
     "not_found": {
         "404": "404",
-        "page_not_found": "Page non trouvée",
-        "sub_text": "Oups ! La page que vous recherchez n'existe pas.",
-        "back_to_homepage": "Retour à la page d'accueil"
+        "page_not_found": "页面未找到",
+        "sub_text": "哎呀！您要查找的页面不存在。",
+        "back_to_homepage": "返回首页"
     },
     "leftbar": {
-        "getting_started": "Commencer",
-        "introduction": "Introduction",
-        "installation": "Installation"
+        "getting_started": "入门指南",
+        "introduction": "简介",
+        "installation": "安装"
     },
     "blog": {
-        "title": "Les derniers blogs de ce produit",
-        "sub_title": "Tous les derniers blogs et actualités, directement de l'équipe.",
-        "published_on": "Publié le",
-        "back_to_blog": "Retour au blog",
-        "posted_by": "Publié par"
+        "title": "本产品的最新博客",
+        "sub_title": "所有最新博客和新闻，直接来自团队。",
+        "published_on": "发布于",
+        "back_to_blog": "返回博客",
+        "posted_by": "发布者"
     },
     "openlink": {
         "email_verification": {
@@ -66,10 +66,10 @@
         }
     },
     "error": {
-        "oops": "Oups !",
-        "something_went_wrong": "Quelque chose s'est mal passé.",
-        "sub_text": "Nous sommes désolés, une erreur s'est produite lors du traitement de votre demande.",
-        "reload_page": "Recharger la page",
-        "back_to_homepage": "Retour à la page d'accueil"
+        "oops": "哇哦 !",
+        "something_went_wrong": "系统出错了.",
+        "sub_text": "很抱歉，处理您的请求时出现错误。",
+        "reload_page": "重新加载页面",
+        "back_to_homepage": "回到首页"
     }
 }
